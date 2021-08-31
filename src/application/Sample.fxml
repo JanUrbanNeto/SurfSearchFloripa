@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="650.0" maxWidth="1200.0" minHeight="650.0" minWidth="1200.0" prefHeight="650.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="25.0" prefHeight="40.0" prefWidth="1200.0" text="SURF SEARCH FLORIPA" textAlignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Pane fx:id="centerPane" layoutY="100.0" prefHeight="550.0" prefWidth="1200.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutY="40.0" prefHeight="30.0" prefWidth="1200.0" text="Type your name and email to start!" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="BASELINE_RIGHT" contentDisplay="CENTER" layoutX="300.0" layoutY="120.0" prefHeight="30.0" prefWidth="60.0" text="Name" textAlignment="RIGHT">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="BASELINE_RIGHT" contentDisplay="CENTER" layoutX="300.0" layoutY="165.0" prefHeight="30.0" prefWidth="60.0" text="E-mail" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textFieldName" layoutX="380.0" layoutY="120.0" prefHeight="30.0" prefWidth="500.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="textFieldEmail" layoutX="380.0" layoutY="165.0" prefHeight="30.0" prefWidth="500.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Button fx:id="buttonOK" layoutX="550.0" layoutY="230.0" mnemonicParsing="false" onAction="#logIn" prefHeight="30.0" prefWidth="100.0" text="OK" />
+            <Label fx:id="warningLabel" alignment="CENTER" contentDisplay="CENTER" layoutY="295.0" prefHeight="30.0" prefWidth="1200.0" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <ImageView fx:id="imageViewIcon1" fitHeight="96.0" fitWidth="96.0" layoutX="290.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imageViewIcon2" fitHeight="96.0" fitWidth="96.0" layoutX="815.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

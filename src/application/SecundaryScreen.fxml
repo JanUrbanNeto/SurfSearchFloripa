@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="550.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SecundaryScreenController">
+   <children>
+      <SplitPane fx:id="splitPane" dividerPositions="0.2036727879799666" prefHeight="550.0" prefWidth="1200.0">
+        <items>
+          <AnchorPane fx:id="anchorPaneLeft" minHeight="160.0" minWidth="100.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Button fx:id="buttonExit" layoutX="80.0" layoutY="475.0" mnemonicParsing="false" onAction="#screenExit" prefHeight="30.0" prefWidth="80.0" text="Logoff" />
+                  <Label layoutX="10.0" layoutY="5.0" prefHeight="20.0" prefWidth="50.0" text="Name:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelUserName" layoutX="20.0" layoutY="25.0" prefHeight="25.0" prefWidth="200.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="55.0" prefHeight="20.0" prefWidth="50.0" text="E-mail:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelUserEmail" layoutX="20.0" layoutY="75.0" prefHeight="25.0" prefWidth="200.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="115.0" prefHeight="25.0" prefWidth="150.0" text="Conditions to Search:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="choiceBoxWave" layoutX="20.0" layoutY="185.0" prefHeight="30.0" prefWidth="200.0" />
+                  <ChoiceBox fx:id="choiceBoxWind" layoutX="20.0" layoutY="145.0" prefHeight="30.0" prefWidth="200.0" />
+                  <Button fx:id="buttonSearch" layoutX="80.0" layoutY="225.0" mnemonicParsing="false" onAction="#searchSurfSpots" prefHeight="30.0" prefWidth="80.0" text="Search">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonSaveSearch" layoutX="80.0" layoutY="265.0" mnemonicParsing="false" onAction="#saveSearch" prefHeight="30.0" prefWidth="80.0" text="Save">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="labelConfirm" alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="515.0" prefHeight="20.0" prefWidth="240.0" textAlignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="buttonReport" layoutX="80.0" layoutY="305.0" mnemonicParsing="false" onAction="#createPdfReport" prefHeight="30.0" prefWidth="80.0" text="Report">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="imageViewIcon" fitHeight="100.0" fitWidth="100.0" layoutX="70.0" layoutY="355.0" pickOnBounds="true" preserveRatio="true" />
+               </children></AnchorPane>
+          <AnchorPane fx:id="anchorPaneRight" minHeight="0.0" minWidth="0.0" prefHeight="500.0" prefWidth="1200.0">
+               <children>
+                  <ListView fx:id="listViewResults" layoutX="10.0" layoutY="60.0" onMouseClicked="#resultClicked" prefHeight="450.0" prefWidth="250.0" />
+                  <Label fx:id="labelResultTimeDate" layoutX="10.0" layoutY="35.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="imageViewSelectedResult" fitHeight="450.0" fitWidth="670.0" layoutX="271.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label layoutX="271.0" layoutY="5.0" text="Search Result Photo:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelTest" layoutX="271.0" layoutY="35.0" prefHeight="18.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="5.0" text="Search Results:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
